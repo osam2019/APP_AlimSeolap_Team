@@ -159,21 +159,21 @@
 
 ### API Server Developer
 
-![image-20191024140541092](C:\Users\Admin\AppData\Roaming\Typora\typora-user-images\image-20191024140541092.png)
+![image-20191024140541092](https://github.com/osam2019/APP_AlimSeolap_Team/blob/master/documentation/kinjun.png)
 
 
 
 ### Android Backend Developer
 
-![image-20191024140916724](C:\Users\Admin\AppData\Roaming\Typora\typora-user-images\image-20191024140916724.png)
+![image-20191024140916724](https://github.com/osam2019/APP_AlimSeolap_Team/blob/master/documentation/You.png)
 
-![image-20191024141255834](C:\Users\Admin\AppData\Roaming\Typora\typora-user-images\image-20191024141255834.png)
+![image-20191024141255834](https://github.com/osam2019/APP_AlimSeolap_Team/blob/master/documentation/kindo.png)
 
 
 
 ### Android Frontend Developer
 
-![image-20191024144201521](C:\Users\Admin\AppData\Roaming\Typora\typora-user-images\image-20191024144201521.png)
+![image-20191024144201521](https://github.com/osam2019/APP_AlimSeolap_Team/blob/master/documentation/hyunu.bmp)
 
 
 
