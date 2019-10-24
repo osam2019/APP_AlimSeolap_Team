@@ -36,12 +36,20 @@
 
 ## 설치 안내
  * **Application**
+   - [Download Release Source / APK](https://github.com/osam2019/APP_AlimSeolap_Team/releases)
    - Dependancy
      - JDK `(>=8)`
      - Android Studio `(>=3)`
      - compileSdkVersion `29`
      - minSdkVersion `26`
  * **Backend**
+   - Command `linux`
+   ```
+   $ git clone https://github.com/noti-dropper/backend.git
+   $ cd backend
+   $ python server.py  #디펜던시 설정 후 실행
+   ```
+   
    - Dependancy
      - Python `(>=3.5)`
      - JDK `(>=8)`
