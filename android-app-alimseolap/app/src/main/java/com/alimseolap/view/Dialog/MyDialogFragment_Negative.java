@@ -66,7 +66,7 @@ public class MyDialogFragment_Negative extends DialogFragment {
 
     private void getData() {
 
-        notiData = database.getNotificationList();
+        notiData = database.getNotificationList("where isread = 0");
 
         Collections.sort(notiData, NotificationDTO.sortByWeight);
 

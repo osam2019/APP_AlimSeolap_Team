@@ -72,7 +72,7 @@ public class MyDialogFragment_Positive extends DialogFragment {
 
     private void getData() {
 
-        notiData = database.getNotificationList();
+        notiData = database.getNotificationList("where isread = 0");
 
         Collections.sort(notiData, NotificationDTO.sortByWeight);
         Collections.reverse(notiData);
