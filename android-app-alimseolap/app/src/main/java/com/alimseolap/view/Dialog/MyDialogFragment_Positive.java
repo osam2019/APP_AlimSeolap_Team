@@ -77,6 +77,11 @@ public class MyDialogFragment_Positive extends DialogFragment {
         Collections.sort(notiData, NotificationDTO.sortByWeight);
         Collections.reverse(notiData);
 
+        for (int i=0;i<notiData.size(); i++)
+            if(notiData.get(i).weight < 0)
+                notiData.remove(i);
+
+
         // 임의의 데이터 여기는 서버로 연결되므로 서버에서 계속하여 갱신한 값을 가져온다.
 //        List<String> listTitle = Arrays.asList("카카오톡", "페이스북", "카카오톡", "페이코", "페이스북", "카카오톡", "카카오톡", "페이스북",
 //                "인스타그램", "인스타그램", "인스타그램", "페이코", "카카오톡", "페이스북", "페이코");

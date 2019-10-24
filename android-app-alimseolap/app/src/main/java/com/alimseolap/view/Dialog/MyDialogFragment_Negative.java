@@ -70,6 +70,10 @@ public class MyDialogFragment_Negative extends DialogFragment {
 
         Collections.sort(notiData, NotificationDTO.sortByWeight);
 
+        for (int i=0;i<notiData.size(); i++)
+            if(notiData.get(i).weight >= 0)
+                notiData.remove(i);
+
 
 //        List<String> listTitle = Arrays.asList("카카오톡", "페이스북", "카카오톡", "페이코", "페이스북", "카카오톡", "카카오톡", "페이스북",
 //                "인스타그램", "인스타그램", "인스타그램", "페이코", "카카오톡", "페이스북", "페이코");
