@@ -1,4 +1,13 @@
-![title](documentation/title.png)
+<p align="center">
+    <img src="documentation/title.png" width="700px">
+</p>
+
+<p align="center">
+	<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/osam2019/APP_AlimSeolap_Team">
+	<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/osam2019/APP_AlimSeolap_Team">
+	<img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/osam2019/APP_AlimSeolap_Team">
+	<img alt="GitHub" src="https://img.shields.io/github/license/osam2019/APP_AlimSeolap_Team">
+</p>
 
 ## 개요
 
@@ -10,6 +19,7 @@
 
 이 질문으로 알림서랍은 세상으로 나왔습니다. 알림서랍은 **스마트폰에 무작위로 밀려드는 푸시 알림들을 당신의 취향에 맞춰 필터링 해주는 앱**입니다. 사용하면 사용할수록 정교해지는 알림서랍 서비스를 이용해보세요!
 
+<br>
 
 ## 주요기능
 <table>
@@ -17,8 +27,12 @@
 	<tr><td>앱 처음 실행 시</td><td>앱 메인 화면</td><td>사용자 추천 알림<br>좌우로 스와이프하여 좋아요 또는 싫어요를 할 수 있다.</td><td>사용자 비추천 알림</td></tr>
 </table>
 
+<br>
+
 ## 사용법
 ![howToUse](documentation/howToUse.png)
+
+<br>
 
 ## 설치 안내
  * **Application**
@@ -44,9 +58,12 @@
 	 $ python server.py
      ```
 
+<br>
+
 ## Application Learning Algorithm
 ![algorithm](documentation/algorithm.png)
 
+<br>
 
 ## Backend API
 - `POST` **/api/analyze-sentence**
@@ -116,28 +133,31 @@
   value 절대값이 클수록 큰 글자로 표현됨.
 
   - **response**
+<img src="https://github.com/noti-dropper/backend/raw/master/nouns_cloud.png" height=250px>
 
-[![img](https://github.com/noti-dropper/backend/raw/master/nouns_cloud.png)](https://github.com/noti-dropper/backend/raw/master/nouns_cloud.png)
-
+<br>
 
 ## Repositories
  - **App-Core** `Android/java`
    - 애플리케이션 핵심 소스 코드
    - DB 관리, Notification 수집, API 통신 기능
-   - Network
+   - [Network](https://github.com/noti-dropper/app-core/network)
  - **App-UI** `Android/java`
    - 애플리케이션 UI
-   - Network
+   - [Network](https://github.com/noti-dropper/app-ui/network)
  - **Backend** `Flask/python`
    - 백엔드 API 
    - 자연어 처리, 명사 유사도 검사, Word-Cloud 생성 기능
-   - Network
+   - [Network](https://github.com/noti-dropper/backend/network)
+
+<br>
 
 ## Troubleshooting
 
 1. 문장을 파악하기 위해서 문장 내부에 있는 명사를 모두 살필 필요는 없을겁니다. 더 중요한 유효 의미 명사를 가려내는 알고리즘을 구상하고 있습니다.
 2. 현재는 유저의 취향 모델을 명사들에 대한 선호도의 조합으로 설계하였습니다. 더 정교한 취향 모델링을 위해 딥러닝 구조의 모델을 구상하고 있습니다.
 
+<br>
 
 ## Licence
 
@@ -163,20 +183,21 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+<br>
 
 ## 팀 정보
 <table>
 	<tr>
-		<td><img src="documentation/member/KJY.png" height=200px></td>
-		<td><img src="documentation/member/YSJ.png" height=200px></td>
+		<td><img src="documentation/member/KJY.png" height=150px></td>
+		<td><img src="documentation/member/YSJ.png" height=150px></td>
 	</tr>
 	<tr>
 		<td>Backend API  Server 개발</td>
 		<td>안드로이드 앱 개발</td>
 	</tr>
 	<tr>
-		<td><img src="documentation/member/KDK.png" height=200px></td>
-		<td><img src="documentation/member/YHW.bmp" height=200px></td>
+		<td><img src="documentation/member/KDK.png" height=150px></td>
+		<td><img src="documentation/member/YHW.bmp" height=150px></td>
 	</tr>
 	<tr>
 		<td>안드로이드 앱 개발</td>
