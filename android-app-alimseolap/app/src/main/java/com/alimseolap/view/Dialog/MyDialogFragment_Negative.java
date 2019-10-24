@@ -132,17 +132,25 @@ public class MyDialogFragment_Negative extends DialogFragment {
 
         @Override
         public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
+            int id = viewHolder.getAdapterPosition(); //어댑터에서 스와이프한 뷰홀더의 위치(위에서 부터의 순서, 시작 : 0 부터)가져옴
 
+            System.out.println(notiData.get(id).msg);
+            int notiId = notiData.get(id).id;
+            System.out.println(notiId);
+            notiData.remove(id);
 
             //스와이프 방향값을 정수형으로 얻어옴.
             MyDialogFragment_Negative.direction = direction;
             runAnimationAgain(viewHolder);
             System.out.println((MyDialogFragment_Negative.direction - 6)/2);
 
+            if((MyDialogFragment_Negative.direction - 6)/2 == 1){
+                database.updateNotiWeight(notiId, true);
+            }else if((MyDialogFragment_Negative.direction - 6)/2 == -1){
+                database.updateNotiWeight(notiId, false);
+            }
 
-
-            // database.updateNotiWeight();
-
+            database.updateIsRead(notiId);
         }
     };
 

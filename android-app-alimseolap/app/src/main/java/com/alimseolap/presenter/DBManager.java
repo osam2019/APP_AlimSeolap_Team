@@ -44,6 +44,12 @@ public class DBManager {
 
 
 
+    public void updateIsRead(int id){
+        db.execSQL("update notification set isread = 1 where id=" + id );
+    }
+
+
+
     public ArrayList<NounDTO> getNounList() {
 
         if(db == null){

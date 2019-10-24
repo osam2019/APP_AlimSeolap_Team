@@ -144,8 +144,9 @@ public class MyDialogFragment_Positive extends DialogFragment {
         public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
             int id = viewHolder.getAdapterPosition(); //어댑터에서 스와이프한 뷰홀더의 위치(위에서 부터의 순서, 시작 : 0 부터)가져옴
 
-
             System.out.println(notiData.get(id).msg);
+            int notiId = notiData.get(id).id;
+            System.out.println(notiId);
             notiData.remove(id);
 
 
@@ -154,12 +155,13 @@ public class MyDialogFragment_Positive extends DialogFragment {
             runAnimationAgain(viewHolder);
             System.out.println((MyDialogFragment_Positive.direction - 6)/2);
 
+            if((MyDialogFragment_Positive.direction - 6)/2 == 1){
+                database.updateNotiWeight(notiId, true);
+            }else if((MyDialogFragment_Positive.direction - 6)/2 == -1){
+                database.updateNotiWeight(notiId, false);
+            }
 
-
-
-//            notiData :TODO asdfasfasdf
-            // database.updateNotiWeight();
-
+            database.updateIsRead(notiId);
         }
     };
 
