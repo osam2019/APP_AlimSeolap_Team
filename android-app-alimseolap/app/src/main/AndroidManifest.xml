@@ -8,16 +8,43 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".view.Splash"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW"/>
-
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".view.FirstOpen"/>
+        <activity android:name=".view.MainActivity"/>
+
+        <service
+            android:name=".service.NotificationCrawlerService"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
     </application>
 
+
+    <!--Database permission-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!--HttpConnection permission-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!--Public permission-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
 </manifest>
+
+
+
+

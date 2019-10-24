@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Splash"
+    android:background="#ffffff">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="220dp"
+        android:layout_marginBottom="258dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/splash"></LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#E6212121">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="66dp">
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_question"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="40dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="가장 좋아하는게 뭐에요?"
+            android:textColor="#ffffff"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:layout_marginLeft="40dp"/>
+
+        <EditText
+            android:id="@+id/editText_like"
+            android:layout_width="299dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="6dp"
+            android:background="#4DFFFFFF"
+            android:ems="10"
+            android:hint=" 입력..."
+            android:inputType="textPersonName"
+            android:textColor="#ffffff"
+            android:text=""
+            android:textColorHint="#82b1ff" />
+
+        <TextView
+            android:layout_width="299dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:text="예시: 피자, 전역, 휴가..."/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="가장 싫어하는게 뭐에요?"
+            android:textColor="#ffffff"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
+
+        <EditText
+            android:id="@+id/editText_hate"
+            android:layout_width="299dp"
+            android:layout_height="43dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="6dp"
+            android:background="#4DFFFFFF"
+            android:ems="10"
+            android:hint=" 입력..."
+            android:textColor="#ffffff"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textColorHint="#e57373" />
+
+        <TextView
+            android:layout_width="299dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:text="예시: 복귀, 선임, 에러메시지 ..."/>
+
+        <Button
+            android:id="@+id/FirstBtn"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/roundedborder"
+            android:text="알림서랍 시작하기"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </LinearLayout>
+</RelativeLayout>
