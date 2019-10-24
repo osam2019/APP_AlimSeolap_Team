@@ -5,8 +5,8 @@
 <p align="center">
 	<a href="https://github.com/osam2019/APP_AlimSeolap_Team/releases"><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/osam2019/APP_AlimSeolap_Team"></a>
 	<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/osam2019/APP_AlimSeolap_Team">
-	<img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/osam2019/APP_AlimSeolap_Team">
-	<img alt="GitHub" src="https://img.shields.io/github/license/osam2019/APP_AlimSeolap_Team">
+	<a href="https://github.com/osam2019/APP_AlimSeolap_Team/releases"><img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/osam2019/APP_AlimSeolap_Team"></a>
+	<a href="https://github.com/osam2019/APP_AlimSeolap_Team/blob/master/LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/osam2019/APP_AlimSeolap_Team"></a>
 </p>
 
 ## 개요
