@@ -24,7 +24,7 @@
 ## 주요기능
 <table>
 	<tr><td><img src="documentation/1.jpg"></td><td><img src="documentation/2.jpg"></td><td><img src="documentation/3.jpg"></td><td><img src="documentation/4.jpg"></td></tr>
-	<tr><td>앱 처음 실행 시</td><td>앱 메인 화면</td><td>사용자 추천 알림<br>좌우로 스와이프하여 좋아요 또는 싫어요를 할 수 있다.</td><td>사용자 비추천 알림</td></tr>
+	<tr><td><b>앱 처음 실행 시</b></td><td><b>앱 메인 화면</b></td><td><b>사용자 추천 알림</b><br>좌우로 스와이프하여 좋아요 또는 싫어요를 할 수 있다.</td><td><b>사용자 비추천 알림</b></td></tr>
 </table>
 
 <br>
